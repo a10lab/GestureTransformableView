@@ -76,6 +76,10 @@ public class GestureTransformableImageView extends ImageView implements OnTouchL
         this.setScaleY(scale);
     }
 
+    public void setAngle(float angle) {
+        this.angle = angle;
+    }
+
     @Override
     public boolean onTouch(View v, MotionEvent event) {
 
