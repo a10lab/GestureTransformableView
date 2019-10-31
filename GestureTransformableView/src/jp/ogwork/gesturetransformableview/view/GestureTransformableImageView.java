@@ -70,6 +70,12 @@ public class GestureTransformableImageView extends ImageView implements OnTouchL
         this.limitScaleMin = limit;
     }
 
+    public void setScale(float scale) {
+        this.scaleFactor = scale;
+        this.setScaleX(scale);
+        this.setScaleY(scale);
+    }
+
     @Override
     public boolean onTouch(View v, MotionEvent event) {
 
